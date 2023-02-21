@@ -1,0 +1,71 @@
+<html> 
+<head>
+    <head>
+        <title>Calculadora</title>
+        <style>
+            h2{
+                color: black;
+                padding-top: 20px;
+				font-family: Arial;
+            }
+        body {
+            background: linear-gradient(  #ECF0F1 5%, #34495E 100%);
+            font-family: cursive;
+            font-style: italic;
+            text-align:center;
+      }
+          
+          .results{
+            padding-left: 50%;
+    
+          } 
+		 
+		  p{
+                color: black;
+                padding-top: 30px;
+				font-family: Arial;
+            font-style: italic;
+            }
+
+            lavel {
+                color: black;
+                padding-top: 30px;
+				font-family: Arial;
+            font-style: italic;
+            }
+          
+          
+        </style>
+        </head>
+      <body>
+            <div style ="background: #ECF0F1">
+            <font color ="white" size="5px"> 
+                <h2> Calculadora </h2>
+            </font>
+            </div>
+            <div style ="background: #ECF0F1 ">
+            
+
+ <form name="calc"> 
+<p>Numero 1: <input type="Text" name="operando1" value="" size="12"> 
+<br>
+<p>Numero 2: <input type="Text" name="operando2" value="" size="12">
+<br>
+<br>
+<input type="Button" name="" value=" Suma + " onclick="calcula('+') ">
+<br>
+<p>Resultado: <input type="Text" name="resultado" value="" size="12">
+
+</form>
+</body>
+
+<script>
+  function calcula(operacion){
+    var operando1 = document.calc.operando1.value 
+    var operando2 = document.calc.operando2.value
+    var result = eval(operando1 + operacion + operando2)
+    document.calc.resultado.value = result
+}
+</script>
+</body>
+</html>
